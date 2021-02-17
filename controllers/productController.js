@@ -42,8 +42,6 @@ class ProductController {
         where: { id },
         returning: true,
       })
-      // if (!data[0]) throw { name: 'error_404_product_not_found' }
-
       const product = data[1][0]
 
       res.status(200).json(product)
@@ -57,7 +55,6 @@ class ProductController {
       const id = req.params.id
 
       const deletedRows = await Product.destroy({ where: { id } })
-      // if (!deletedRows) throw { name: 'error_404_product_not_found' }
       const response = req.product
 
       res.status(200).json(response)
