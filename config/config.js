@@ -1,12 +1,11 @@
-if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test')
-  require('dotenv').config()
+if (process.env.NODE_ENV !== 'production') require('dotenv').config()
 
 module.exports = {
   development: {
-    username: 'tugas',
-    password: 'tugas',
-    database: 'ecommerce-cms-dev',
-    host: 'localhost',
+    username: process.env.DEV_DATABASE_USERNAME,
+    password: process.env.DEV_DATABASE_PASSWORD,
+    database: process.env.DEV_DATABASE_DATABASE,
+    host: process.env.DEV_DATABASE_HOST,
     dialect: 'postgres',
   },
   test: {

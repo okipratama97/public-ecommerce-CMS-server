@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1613552036077" clover="3.2.0">
-  <project timestamp="1613552036077" name="All files">
-    <metrics statements="223" coveredstatements="205" conditionals="47" coveredconditionals="36" methods="24" coveredmethods="24" elements="294" coveredelements="265" complexity="0" loc="223" ncloc="223" packages="7" files="16" classes="16"/>
+<coverage generated="1613554691004" clover="3.2.0">
+  <project timestamp="1613554691004" name="All files">
+    <metrics statements="218" coveredstatements="200" conditionals="43" coveredconditionals="33" methods="24" coveredmethods="24" elements="285" coveredelements="257" complexity="0" loc="218" ncloc="218" packages="7" files="16" classes="16"/>
     <package name="ecommerce-CMS-server">
       <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/home/cypher/ecommerce-CMS-server/app.js">
@@ -22,16 +22,11 @@
       </file>
     </package>
     <package name="ecommerce-CMS-server.config">
-      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="config.js" path="/home/cypher/ecommerce-CMS-server/config/config.js">
-        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="cond" truecount="3" falsecount="1"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
       </file>
     </package>
     <package name="ecommerce-CMS-server.controllers">
