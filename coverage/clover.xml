@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1613549766752" clover="3.2.0">
-  <project timestamp="1613549766753" name="All files">
-    <metrics statements="219" coveredstatements="201" conditionals="47" coveredconditionals="36" methods="24" coveredmethods="24" elements="290" coveredelements="261" complexity="0" loc="219" ncloc="219" packages="7" files="16" classes="16"/>
+<coverage generated="1613552036077" clover="3.2.0">
+  <project timestamp="1613552036077" name="All files">
+    <metrics statements="223" coveredstatements="205" conditionals="47" coveredconditionals="36" methods="24" coveredmethods="24" elements="294" coveredelements="265" complexity="0" loc="223" ncloc="223" packages="7" files="16" classes="16"/>
     <package name="ecommerce-CMS-server">
       <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/home/cypher/ecommerce-CMS-server/app.js">
@@ -22,12 +22,16 @@
       </file>
     </package>
     <package name="ecommerce-CMS-server.config">
-      <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
       <file name="config.js" path="/home/cypher/ecommerce-CMS-server/config/config.js">
-        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="0" coveredmethods="0"/>
         <line num="1" count="2" type="cond" truecount="3" falsecount="1"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
     </package>
     <package name="ecommerce-CMS-server.controllers">
@@ -54,17 +58,17 @@
         <line num="38" count="10" type="stmt"/>
         <line num="39" count="10" type="stmt"/>
         <line num="41" count="10" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="51" count="9" type="stmt"/>
-        <line num="56" count="1" type="stmt"/>
+        <line num="49" count="9" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="71" count="2" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
       </file>
       <file name="userController.js" path="/home/cypher/ecommerce-CMS-server/controllers/userController.js">
         <metrics statements="25" coveredstatements="25" conditionals="12" coveredconditionals="11" methods="2" coveredmethods="2"/>
@@ -135,9 +139,9 @@
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="31" type="stmt"/>
         <line num="3" count="31" type="stmt"/>
-        <line num="5" count="31" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="26" type="stmt"/>
-        <line num="9" count="5" type="stmt"/>
+        <line num="4" count="31" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="26" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
       </file>
       <file name="errorHandler.js" path="/home/cypher/ecommerce-CMS-server/middlewares/errorHandler.js">
         <metrics statements="57" coveredstatements="44" conditionals="12" coveredconditionals="8" methods="2" coveredmethods="2"/>
