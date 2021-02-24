@@ -249,7 +249,11 @@ _Response (200 - OK)_
 
 ---
 
+<<<<<<< HEAD
 ### POST /register
+=======
+### POST /signin
+>>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 
 > Login User
 
@@ -265,7 +269,50 @@ _Request Body_
 {
     "email": "<user input>",
     "password": "<user input>",
+<<<<<<< HEAD
     "name": "<user input>"
+=======
+}
+```
+
+_Response (200 - OK)_
+
+```
+{
+    "access_token": <given access token by system>,
+    "id" : 2
+    "email": "customer@mail.com",
+}
+```
+
+---
+
+### POST /register
+
+> Register User
+
+_Request Header_
+
+```
+not needed
+```
+
+_Request Body method 1 : for admin_
+
+```
+{
+    "email": "<user input>",
+    "password": "<user input>",
+    "role": "Admin"
+}
+```
+_Request Body method 2 : for customer_
+
+```
+{
+    "email": "<user input>",
+    "password": "<user input>"
+>>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 }
 ```
 

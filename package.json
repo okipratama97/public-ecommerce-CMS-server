@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node bin/http.js",
     "test": "jest --detectOpenHandles --forceExit --runInBand --verbose --collectCoverage --silent",
     "dev": "NODE_ENV=development npx nodemon bin/http.js"
   },

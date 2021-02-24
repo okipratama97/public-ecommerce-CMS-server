@@ -29,6 +29,12 @@ module.exports = (err, _, res, next) => {
       message = 'Requested product was not found'
       break
 
+    case 'error_404_cart_not_found':
+      statusCode = 404
+      errorCode = 'Not Found'
+      message = 'Requested cart was not found'
+      break
+
     case 'error_403_product_forbidden':
       statusCode = 403
       errorCode = 'Forbidden access'
@@ -65,10 +71,22 @@ module.exports = (err, _, res, next) => {
       message = 'Only Admin are allowed to access'
       break
 
+    case 'error_403_not_customer_forbidden':
+      statusCode = 403
+      errorCode = 'Forbidden access'
+      message = 'Only Customer are allowed to access'
+      break
+
     case 'error_400_wrong_email_password':
       statusCode = 400
       errorCode = 'Validation error'
       message = 'Wrong email or password'
+      break
+
+    case 'error_400_quantity_exceed_stock':
+      statusCode = 400
+      errorCode = 'Validation error'
+      message = 'Requested quantity exceeding stock'
       break
 
     case 'SequelizeUniqueConstraintError':
