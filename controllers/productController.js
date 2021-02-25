@@ -3,6 +3,7 @@ const { Product } = require('../models')
 class ProductController {
   static async fetchAllProducts(req, res, next) {
     try {
+      console.log('fetchall')
       const products = await Product.findAll({ order: [['id']] })
       res.status(200).json(products)
     } catch (err) {
