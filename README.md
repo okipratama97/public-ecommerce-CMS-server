@@ -470,7 +470,7 @@ _Error (404)_
 ```
 {
 "errorCode": "Not Found",
-"message": "Requested product was not found"
+"message": "Requested cart was not found"
 }
 ```
 
