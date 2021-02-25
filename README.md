@@ -249,7 +249,11 @@ _Response (200 - OK)_
 
 ---
 
+<<<<<<< HEAD
+### POST /register
+=======
 ### POST /signin
+>>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 
 > Login User
 
@@ -265,6 +269,9 @@ _Request Body_
 {
     "email": "<user input>",
     "password": "<user input>",
+<<<<<<< HEAD
+    "name": "<user input>"
+=======
 }
 ```
 
@@ -305,6 +312,7 @@ _Request Body method 2 : for customer_
 {
     "email": "<user input>",
     "password": "<user input>"
+>>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 }
 ```
 
