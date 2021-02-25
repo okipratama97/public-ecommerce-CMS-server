@@ -43,6 +43,47 @@ _Error (500)_
 }
 ```
 
+### GET /products/catalogue
+
+> Get all Products
+
+_Request Header_
+
+```
+not needed
+```
+
+_Request Body_
+
+```
+not needed
+```
+
+_Response (200)_
+
+```
+[
+  {
+    "id": 2,
+    "name": "Product 2",
+    "image_url": "https://dummyimage.com/150x150/000/fff&text=Item",
+    "price": 10000,
+    "stock": 10,
+    "updatedAt": "2021-02-21T10:26:50.005Z",
+    "createdAt": "2021-02-21T10:26:50.005Z"
+  }
+]
+```
+
+_Error (500)_
+
+```
+{
+    "errorCode": "Internal server error",
+    "message": "Unexpected error."
+}
+```
+
 ---
 
 ### GET /products/:id
@@ -220,7 +261,7 @@ _Error (404)_
 
 ### POST /login
 
-> Login User
+> Login User For Admin
 
 _Request Header_
 
@@ -248,14 +289,10 @@ _Response (200 - OK)_
 ```
 
 ---
-
-<<<<<<< HEAD
-### POST /register
-=======
 ### POST /signin
->>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 
-> Login User
+
+> Login User For Customer
 
 _Request Header_
 
@@ -269,9 +306,6 @@ _Request Body_
 {
     "email": "<user input>",
     "password": "<user input>",
-<<<<<<< HEAD
-    "name": "<user input>"
-=======
 }
 ```
 
@@ -312,7 +346,6 @@ _Request Body method 2 : for customer_
 {
     "email": "<user input>",
     "password": "<user input>"
->>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 }
 ```
 
