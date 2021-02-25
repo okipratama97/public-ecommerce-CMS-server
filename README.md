@@ -220,7 +220,7 @@ _Error (404)_
 
 ### POST /login
 
-> Login User
+> Login User For Admin
 
 _Request Header_
 
@@ -249,13 +249,9 @@ _Response (200 - OK)_
 
 ---
 
-<<<<<<< HEAD
-### POST /register
-=======
 ### POST /signin
->>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 
-> Login User
+> Login User For Customer
 
 _Request Header_
 
@@ -269,9 +265,6 @@ _Request Body_
 {
     "email": "<user input>",
     "password": "<user input>",
-<<<<<<< HEAD
-    "name": "<user input>"
-=======
 }
 ```
 
@@ -312,7 +305,6 @@ _Request Body method 2 : for customer_
 {
     "email": "<user input>",
     "password": "<user input>"
->>>>>>> f29e7be27db750bc34b9c81387c027c8da260fe1
 }
 ```
 
