@@ -5,7 +5,7 @@ class CartController {
     try {
       const UserId = req.user.id
 
-      const carts = await Cart.findAll({ where: { UserId }, order: [['id']] })
+      const carts = await Cart.findAll({ where: { UserId }, order: [['id']], include: Product })
       res.status(200).json(carts)
     } catch (err) {
       next(err)
