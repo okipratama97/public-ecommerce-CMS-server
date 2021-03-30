@@ -259,6 +259,221 @@ _Error (404)_
 
 ---
 
+### GET /carts
+
+> Get all Carts
+
+_Request Header_
+
+```
+{
+  "access_token": "<your access token>"
+}
+```
+
+_Request Body_
+
+```
+not needed
+```
+
+_Response (200)_
+
+```
+[
+    {
+        "id": 3,
+        "quantity": 10,
+        "status": true,
+        "UserId": 1,
+        "ProductId": 2,
+        "createdAt": "2021-02-24T02:55:05.208Z",
+        "updatedAt": "2021-02-24T03:07:58.018Z",
+        "Product": {
+            "id": 2,
+            "name": "Product 2",
+            "image_url": "https://dummyimage.com/150x150/000/fff&text=Item",
+            "price": 10000,
+            "stock": 10,
+            "createdAt": "2021-02-21T10:26:50.005Z",
+            "updatedAt": "2021-02-21T10:26:50.005Z"
+        }
+    }
+]
+```
+
+_Error (500)_
+
+```
+{
+    "errorCode": "Internal server error",
+    "message": "Unexpected error."
+}
+```
+
+---
+
+### POST /carts/:productId
+
+> Create new cart
+
+_Request Header_
+
+```
+{
+  "access_token": "<your access token>"
+}
+```
+
+_Request Body_
+
+```
+{
+    "quantity": "<user input>"
+}
+```
+_Response (201 - Created)_
+
+```
+{
+    "id": <given id by system>,
+    "quantity": "<posted input>",
+    "UserId": <logged in user id>,
+    "ProductId": <sent params>,
+    "updatedAt": "2021-02-13T11:18:19.372Z",
+    "createdAt": "2021-02-13T11:18:19.372Z"
+}
+```
+
+---
+
+### GET /carts
+
+> Get a Cart
+
+_Request Header_
+
+```
+{
+  "access_token": "<your access token>"
+}
+```
+
+_Request Body_
+
+```
+not needed
+```
+
+_Response (200)_
+
+```
+{
+    "id": 3,
+    "quantity": 10,
+    "status": true,
+    "UserId": 1,
+    "ProductId": 2,
+    "createdAt": "2021-02-24T02:55:05.208Z",
+    "updatedAt": "2021-02-24T03:07:58.018Z",
+    "Product": {
+        "id": 2,
+        "name": "Product 2",
+        "image_url": "https://dummyimage.com/150x150/000/fff&text=Item",
+        "price": 10000,
+        "stock": 10,
+        "createdAt": "2021-02-21T10:26:50.005Z",
+        "updatedAt": "2021-02-21T10:26:50.005Z"
+    }
+}
+```
+_Error (404)_
+
+```
+{
+  "errorCode": "Not Found",
+  "message": "Requested cart was not found"
+}
+```
+
+---
+
+### PATCH /carts/:id
+
+> Update cart
+
+_Request Header_
+
+```
+{
+  "access_token": "<your access token>"
+}
+```
+
+_Request Body_
+
+```
+{
+    "quantity": "<user input>"
+}
+```
+_Response (201 - Created)_
+
+```
+{
+    "id": 3,
+    "quantity": <posted input>,
+    "status": true,
+    "UserId": 1,
+    "ProductId": 2,
+    "updatedAt": "2021-02-13T11:18:19.372Z",
+    "createdAt": "2021-02-13T11:18:19.372Z"
+}
+```
+_Error (404)_
+
+```
+{
+  "errorCode": "Not Found",
+  "message": "Requested cart was not found"
+}
+```
+
+### DELETE /carts/:id
+
+> Delete cart defined by the id provided
+
+_Request Header_
+
+```
+{
+  "access_token": "<your access token>"
+}
+```
+
+_Request Body_
+
+```
+not needed
+```
+
+_Response (200 - OK)_
+
+```
+{
+    "message": "Success removing this cart"
+}
+```
+
+_Error (404)_
+
+```
+{
+"errorCode": "Not Found",
+"message": "Requested cart was not found"
+}
+```
+
 ### POST /login
 
 > Login User For Admin
