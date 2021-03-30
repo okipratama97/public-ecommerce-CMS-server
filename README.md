@@ -1,5 +1,8 @@
 # ecommerce-CMS-server
 
+server:
+https://ecommerce-pico.herokuapp.com/
+
 ### GET /products
 
 > Get all Products
@@ -573,3 +576,4 @@ _Response (201 - Created)_
     "email": "<posted input>",
 }
 ```
+
